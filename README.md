@@ -2,7 +2,7 @@
 
 ## Inicializando o objeto
 
-```
+```php
 $calculator = new \Calculator\TaxCalculator([
     'baseTax' => 2.00,
     'anticipationMonthlyTax' => 5.00,
@@ -24,7 +24,7 @@ $calculator = new \Calculator\TaxCalculator([
 
 ## Obtendo o resultado do cálculo
 
-```
+```php
 $calculator->calculate();
 var_dump($calculator->getResult());
 ```
