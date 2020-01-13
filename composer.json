@@ -1,0 +1,25 @@
+{
+    "name": "branvo/tax_calculator",
+    "description": "SDK para cálculo de taxas flexíveis",
+    "authors": [
+        {
+            "name": "Branvo Pagamentos S.A."
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Calculator\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Calculator\\": "tests"
+        }
+    },
+    "require": {
+        "php": "^7"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6"
+    }
+}
