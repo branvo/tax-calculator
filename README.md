@@ -2,14 +2,16 @@
 
 ## Inicializando o objeto
 
-```$calculator = new \Calculator\TaxCalculator([
+```
+$calculator = new \Calculator\TaxCalculator([
     'baseTax' => 2.00,
     'anticipationMonthlyTax' => 5.00,
     'daysToReceive' => 30,
     'cashback' => 1.00,
     'tributes' => 6.00,
     'profit' => 4.00
-]);```
+]);
+```
 
 ## Parâmetros do construtor
 
@@ -19,3 +21,10 @@
  4. cashback: Porcentagem que o estabelecimento irá fornecer de cashback. Se for NULL, não considerará o cashback no cálculo.
  5. tributes: Porcentagem de impostos pagos.
  6. profit: Porcentagem de lucro desejado.
+
+## Obtendo o resultado do cálculo
+
+```
+$calculator->calculate();
+var_dump($calculator->getResult());
+```
